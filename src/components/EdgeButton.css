@@ -1,0 +1,53 @@
+.edge-btn-wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.section-with-edge-btn {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.btn-edge {
+  background: var(--white);
+  color: var(--black);
+  border: 2px solid var(--red);
+  padding: 16px 28px 16px 36px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  gap: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.btn-edge:hover {
+  background: var(--white);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-edge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  line-height: 1;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.btn-edge--light .btn-edge-icon {
+  background: #ececec;
+  color: var(--red);
+}
+
+.btn-edge--dark .btn-edge-icon {
+  background: var(--black);
+  color: var(--white);
+}
