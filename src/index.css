@@ -17,9 +17,10 @@
   --dark: #1e1e1e;
   --dark-card: #2a2a2a;
   --white: #ffffff;
-  --font: 'Montserrat', system-ui, -apple-system, sans-serif;
-  --font-display: 'Bebas Neue', sans-serif;
-  --max-width: 1480px;
+  --font: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --max-width: 1680px;
   --radius-lg: 32px;
   --radius-md: 16px;
   --radius-pill: 50px;
@@ -28,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 110%;
 }
 
 body {
@@ -63,7 +65,7 @@ textarea {
 .section-pill {
   background: var(--grey-section);
   border-radius: var(--radius-lg);
-  padding: 72px 80px;
+  padding: clamp(56px, 5.5vw, 84px) clamp(56px, 5.5vw, 92px);
 }
 
 .section-pill.contact {

@@ -343,7 +343,7 @@
 
 .activity-card .dummy-image {
   aspect-ratio: 1.45 / 1;
-  border-radius: 0;
+  border-radius: 14px;
 }
 
 .activity-title {
