@@ -13,8 +13,13 @@
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2px;
 }
+
+/* .portfolio-divider {
+  width: 100%;
+  margin: 12px 0;
+} */
 
 .portfolio-category-list {
   display: flex;
@@ -22,11 +27,12 @@
   justify-content: center;
   align-items: center;
   gap: 6px 10px;
-  font-size: clamp(0.72rem, 1.1vw, 0.88rem);
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: clamp(1.192rem, 1.1vw, 0.88rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--black);
+  margin-top: 8px;
 }
 
 .category-sep {
@@ -83,18 +89,15 @@
 }
 
 .project-card {
-  background: var(--card-bg);
-  border-radius: 20px;
-  padding: 18px 18px 22px;
   display: flex;
   flex-direction: column;
 }
 
 .project-card-image {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   border-radius: 14px;
-  background: #ccc;
+  background: #f0f0f0;
 }
 
 .project-card-image img {
@@ -104,30 +107,31 @@
 }
 
 .project-card-body {
-  padding: 18px 8px 4px;
+  padding: 16px 0 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .project-card-divider {
-  margin: 4px 0;
+  display: none;
 }
 
 .project-card-title {
-  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: var(--font);
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--black);
 }
 
 .project-card-location {
   font-size: clamp(0.62rem, 0.85vw, 0.75rem);
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--black);
   white-space: nowrap;

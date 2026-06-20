@@ -106,33 +106,36 @@ export default function Careers() {
 
           <form className="careers-form" onSubmit={handleSubmit} id="careers-form">
             <div className="form-field">
-              <label htmlFor="career-name">Name</label>
               <input
                 id="career-name"
                 name="name"
                 type="text"
+                placeholder="NAME"
+                aria-label="Name"
                 value={form.name}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-field">
-              <label htmlFor="career-email">Mail Id</label>
               <input
                 id="career-email"
                 name="email"
                 type="email"
+                placeholder="MAIL ID"
+                aria-label="Email"
                 value={form.email}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-field">
-              <label htmlFor="career-message">Message</label>
               <textarea
                 id="career-message"
                 name="message"
-                rows={2}
+                rows={1}
+                placeholder="MESSAGE"
+                aria-label="Message"
                 value={form.message}
                 onChange={handleChange}
               />

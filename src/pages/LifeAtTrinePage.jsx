@@ -33,10 +33,10 @@ export default function LifeAtTrinePage() {
   return (
     <main className="content-page">
       <div className="container">
-        <header className="page-intro">
+        <header className="page-intro life-at-trine-intro">
           <p className="page-kicker">2008 - 2026</p>
           <h1 className="page-title">Life At Trine</h1>
-          <p className="page-subtitle">Employment and Social Activity</p>
+          <p className="page-subtitle">EMPLOYMEENT AND SOCIAL ACTIVITY</p>
         </header>
 
         <div className="simple-card-grid life-grid">

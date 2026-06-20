@@ -325,11 +325,11 @@
   border: 1px solid #e0e0e0;
   border-radius: 18px;
   background:
-    linear-gradient(45deg, #f6f6f6 25%, transparent 25%),
-    linear-gradient(-45deg, #f6f6f6 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #f6f6f6 75%),
-    linear-gradient(-45deg, transparent 75%, #f6f6f6 75%),
-    #fff;
+    linear-gradient(45deg, #2a2a2a 25%, transparent 25%),
+    linear-gradient(-45deg, #2a2a2a 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2a2a2a 75%),
+    linear-gradient(-45deg, transparent 75%, #2a2a2a 75%),
+    #1f1f1f;
   background-size: 18px 18px;
   background-position: 0 0, 0 9px, 9px -9px, -9px 0;
   overflow: hidden;
@@ -474,6 +474,16 @@
 
 .admin-login-card .admin-kicker {
   text-align: center;
+}
+
+.admin-powered-by {
+  text-align: center;
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: -4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 1100px) {

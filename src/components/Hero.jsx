@@ -33,8 +33,19 @@ export default function Hero() {
               </svg>
             </span>
           </a>
-          <a href="#projects" className="btn btn-outline">
-            Explore Projects
+          <a href="#projects" className="btn btn-outline btn-explore">
+            <span>Explore Projects</span>
+            <span className="btn-explore-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9 5l7 7-7 7"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
           </a>
         </div>
       </div>

@@ -6,11 +6,12 @@
 .hero-eyebrow {
   font-family: var(--font-display);
   font-size: clamp(1.5rem, 3vw, 2.3rem);
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--black);
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+  line-height: 1;
 }
 
 .hero-title {
@@ -19,8 +20,9 @@
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  line-height: 0.92;
+  line-height: 0.85;
   color: var(--black);
+  margin: 0;
 }
 
 .hero-dot {
@@ -35,12 +37,13 @@
 
 .hero-since {
   font-family: var(--font-display);
-  margin-top: 16px;
-  font-size: clamp(1.3rem, 2.4vw, 1.95rem);
-  font-weight: 400;
-  letter-spacing: 0.14em;
+  margin-top: -10px;
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+  font-weight: 300;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--red);
+  line-height: 1;
 }
 
 .hero-image-wrap {
@@ -58,13 +61,4 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-}
-
-.hero-actions .btn {
-  font-size: 0.9rem;
-}
-
-.hero-actions .btn-outline {
-  min-width: 220px;
-  padding: 20px 52px;
 }

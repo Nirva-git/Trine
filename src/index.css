@@ -77,7 +77,8 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 18px 48px;
+  padding: 0 48px;
+  height: 44px;
   border-radius: var(--radius-pill);
   font-size: 0.85rem;
   font-weight: 600;
@@ -102,19 +103,38 @@ textarea {
   border-color: var(--red-dark);
 }
 
-.btn-contact {
-  padding: 14px 14px 14px 36px;
-  min-width: 240px;
+.btn-contact,
+.btn-explore {
+  padding: 0 6px 0 40px;
+  min-width: 200px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
   justify-content: space-between;
-  font-family: var(--font);
-  font-weight: 500;
-  letter-spacing: 0.16em;
+  font-size: 1.3rem;
+  font-weight: 200;
+  letter-spacing: 0.08em;
+}
+
+.btn-outline.btn-contact {
+  padding-right: 5px
+}
+
+.btn-outline.btn-explore {
+  color: var(--black);
+  border-color: var(--red);
+  background: var(--white);
+  padding-right: 5px
+}
+
+.btn-outline.btn-explore:hover {
+  background: rgba(228, 35, 42, 0.06);
 }
 
 .btn-phone-icon {
   flex-shrink: 0;
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   border: 2px solid rgba(255, 255, 255, 0.95);
   border-radius: 50%;
   display: inline-flex;
@@ -123,8 +143,25 @@ textarea {
 }
 
 .btn-phone-icon svg {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+}
+
+.btn-explore-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+.btn-explore-icon svg {
+  width: 14px;
+  height: 14px;
 }
 
 .btn-outline {
@@ -139,11 +176,12 @@ textarea {
 
 .section-title-red {
   color: var(--red);
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-size: clamp(2.0rem, 4.5vw, 3.0rem);
+  font-weight: 400;
+  letter-spacing: 0em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: -24px;
 }
 
 .section-subtitle {
@@ -187,11 +225,20 @@ textarea {
   border: none;
   border-bottom: 1px solid #d0d0d0;
   background: transparent;
-  padding: 10px 0;
+  padding: 4px 0 2px;
   font-size: 0.9rem;
   color: var(--black);
   outline: none;
   resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a0a0a0;
 }
 
 .form-field input:focus,

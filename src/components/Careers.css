@@ -1,14 +1,16 @@
 .careers {
-  padding: 80px 0 0;
+  padding: 90px 80px 0;
   position: relative;
   overflow: visible;
-  margin-bottom: 0;
+  margin: 50px 32px 64px;
+  width: min(100% - 64px, calc(var(--max-width) + 64px));
+  margin-inline: auto;
 }
 
 .careers-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px 64px;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 32px 64px;
   align-items: start;
 }
 
@@ -17,18 +19,20 @@
 }
 
 .careers-title {
-  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.01em;
-  line-height: 1.15;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  color: var(--black);
+  margin-bottom: -2px;
 }
 
 .careers-subtitle {
-  margin-top: 10px;
-  font-size: clamp(0.72rem, 1vw, 0.82rem);
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  margin-top: 0;
+  font-size: clamp(0.95rem, 1.5vw, 1.25rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--red);
   margin-bottom: 40px;
@@ -37,34 +41,8 @@
 .careers-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 560px;
-}
-
-.careers-form .form-field {
-  gap: 0;
-}
-
-.careers-form .form-field label {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  color: #c0c0c0;
-}
-
-.careers-form .form-field input,
-.careers-form .form-field textarea {
-  padding: 2px 0 5px;
-  font-size: 0.95rem;
-  border-bottom-color: #c8c8c8;
-}
-
-.careers-form .form-field input {
-  height: 28px;
-}
-
-.careers-form .form-field textarea {
-  height: 38px;
-  min-height: 38px;
+  gap: 32px;
+  width: 100%;
 }
 
 .careers-side {
@@ -100,16 +78,18 @@
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  align-content: center;
   color: #b0b0b0;
 }
 
 .upload-hint {
   margin-top: 14px;
-  font-size: 0.68rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #b0b0b0;
+  text-align: center;
 }
 
 .upload-file {
@@ -117,6 +97,7 @@
   font-size: 0.8rem;
   color: var(--red);
   font-weight: 600;
+  text-align: center;
 }
 
 .upload-divider {
@@ -139,11 +120,12 @@
 }
 
 .hiring-illustration {
-  width: min(300px, 72vw);
+  width: min(240px, 60vw);
   height: auto;
   object-fit: contain;
   display: block;
 }
+
 .btn-submit-career {
   margin-top: 16px;
   align-self: flex-start;

@@ -15,13 +15,17 @@
 .btn-edge {
   background: var(--white);
   color: var(--black);
-  border: 2px solid var(--red);
-  padding: 16px 28px 16px 36px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  gap: 16px;
+  border: 1px solid var(--red);
+  padding: 0 6px 0 40px;
+  height: 44px;
+  justify-content: space-between;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  gap: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 40px;
 }
 
 .btn-edge:hover {
@@ -33,12 +37,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  font-size: 1.1rem;
-  line-height: 1;
-  font-weight: 700;
   flex-shrink: 0;
 }
 

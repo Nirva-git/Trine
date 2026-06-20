@@ -59,44 +59,48 @@ export default function Contact() {
             onSubmit={handleSubmit}
           >
             <div className="form-field">
-              <label htmlFor="contact-name">Name</label>
               <input
                 id="contact-name"
                 name="name"
                 type="text"
+                placeholder="NAME"
+                aria-label="Name"
                 value={form.name}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-field">
-              <label htmlFor="contact-phone">Contact No.</label>
               <input
                 id="contact-phone"
                 name="contact"
                 type="tel"
+                placeholder="CONTACT NO."
+                aria-label="Contact Number"
                 value={form.contact}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-field">
-              <label htmlFor="contact-email">Mail Id</label>
               <input
                 id="contact-email"
                 name="email"
                 type="email"
+                placeholder="MAIL ID"
+                aria-label="Email"
                 value={form.email}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="form-field">
-              <label htmlFor="contact-message">Message</label>
               <textarea
                 id="contact-message"
                 name="message"
-                rows={2}
+                rows={1}
+                placeholder="MESSAGE"
+                aria-label="Message"
                 value={form.message}
                 onChange={handleChange}
               />

@@ -1,6 +1,6 @@
 .clients {
   margin: 0 32px 64px;
-  width: min(100% - 64px, calc(var(--max-width) + 64px));
+  width: min(100% - 64px, var(--max-width));
   margin-inline: auto;
 }
 
@@ -33,7 +33,7 @@
 .clients-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 14px;
+  gap: 30px;
   margin-top: 44px;
   padding-bottom: 16px;
 }
@@ -41,7 +41,7 @@
 .client-cell {
   aspect-ratio: 16 / 10;
   border: 1px solid #555;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;

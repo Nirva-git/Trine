@@ -32,6 +32,47 @@
   font-weight: 500;
 }
 
+.careers-page-title {
+  font-family: var(--font-bebas);
+  color: var(--red);
+}
+
+.careers-page-subtitle {
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.machinery-page-title {
+  font-family: var(--font-bebas);
+  color: var(--red);
+}
+
+.machinery-page-subtitle {
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.visionary-page-title {
+  font-family: var(--font-bebas);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  color: var(--red);
+}
+
+.visionary-page-subtitle {
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
 .dummy-image {
   display: grid;
   place-items: center;
@@ -52,6 +93,11 @@
   gap: 40px 28px;
   max-width: 980px;
   margin-inline: auto;
+}
+
+.machinery-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1200px;
 }
 
 .simple-card .dummy-image {
@@ -94,12 +140,50 @@
   font-family: var(--font-display);
   font-size: 1.03rem;
   line-height: 1.12;
-  text-align: justify;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .life-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1200px;
   margin-bottom: 0;
+}
+
+.life-grid .simple-card-title {
+  text-transform: uppercase;
+}
+
+.life-at-trine-intro {
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.life-at-trine-intro .page-kicker {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  letter-spacing: 0.2rem;
+  margin-bottom: 0px;
+}
+
+.life-at-trine-intro .page-title {
+  font-family: var(--font-bebas);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 400;
+  color: var(--red);
+  line-height: 0.85;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.life-at-trine-intro .page-subtitle {
+  margin-top: 2px;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 .life-card-button {
@@ -392,7 +476,9 @@
   }
 
   .activity-grid,
-  .jobs-grid {
+  .jobs-grid,
+  .life-grid,
+  .machinery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -436,7 +522,8 @@
   .simple-card-grid,
   .people-grid,
   .jobs-grid,
-  .activity-grid {
+  .activity-grid,
+  .life-grid {
     grid-template-columns: 1fr;
   }
 

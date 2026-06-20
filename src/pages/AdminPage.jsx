@@ -71,7 +71,7 @@ export default function AdminPage() {
   const [password, setPassword] = useState('')
   const [active, setActive] = useState(tabs[0])
   const [status, setStatus] = useState('')
-  
+
   const [applications, setApplications] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
 
@@ -176,14 +176,15 @@ export default function AdminPage() {
     return (
       <main className="admin-login">
         <form onSubmit={login} className="admin-login-card">
-          <img src="/trine-logo.jpeg" alt="Trine Projects" />
+          <img src="/trine%20logo%20symbol%20cropped.png" alt="Trine Projects" className="admin-login-logo" />
           <div>
             <p className="admin-kicker">Trine Projects</p>
-            <h1>Website Admin</h1>
+            <h1>Admin Website </h1>
           </div>
           <Field label="Admin password" value={password} onChange={setPassword} />
           <button type="submit" className="admin-primary">Sign In</button>
           {status && <p className="admin-status">{status}</p>}
+          <p className="admin-powered-by">Powered by The Red Owl Media</p>
         </form>
       </main>
     )
@@ -193,7 +194,7 @@ export default function AdminPage() {
     <main className="admin-shell">
       <aside className="admin-sidebar">
         <div className="admin-brand">
-          <img src="/trine-logo.jpeg" alt="Trine Projects" />
+          <img src="/trine%20logo%20symbol%20cropped.png" alt="Trine Projects" />
           <div>
             <p>Trine Projects</p>
             <h1>Content Studio</h1>
@@ -362,7 +363,7 @@ export default function AdminPage() {
                           })}
                         </span>
                       </div>
-                      
+
                       <div className="admin-app-body">
                         {app.message ? (
                           <blockquote className="admin-app-message">

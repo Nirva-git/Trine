@@ -8,8 +8,8 @@ export default function VisionaryPage() {
       <div className="container">
         <header className="page-intro">
           <p className="page-kicker">Our Heros</p>
-          <h1 className="page-title">Our Visionary</h1>
-          <p className="page-subtitle">2007 and still counting</p>
+          <h1 className="page-title visionary-page-title">Our Visionary</h1>
+          <p className="page-subtitle visionary-page-subtitle">2007 and still counting</p>
         </header>
 
         <div className="people-grid">

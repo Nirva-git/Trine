@@ -17,27 +17,29 @@
 .stat-divider {
   position: absolute;
   left: 0;
-  top: 8%;
-  bottom: 8%;
+  top: 15%;
+  bottom: 15%;
   width: 1px;
-  background: #ccc;
+  background: #e8e8e8;
 }
 
 .stat-value {
-  font-size: clamp(2.75rem, 5vw, 4rem);
-  font-weight: 700;
+  font-family: var(--font-bebas);
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  font-weight: 400;
   color: var(--red);
-  line-height: 1;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
 }
 
 .stat-label {
-  margin-top: 20px;
-  font-size: clamp(0.7rem, 1vw, 0.82rem);
+  margin-top: 8px;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--grey);
-  line-height: 1.5;
+  color: var(--dark);
+  line-height: 1.4;
   max-width: 260px;
   margin-inline: auto;
 }

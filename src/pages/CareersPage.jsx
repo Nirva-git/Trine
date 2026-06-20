@@ -11,8 +11,8 @@ export default function CareersPage() {
         <div className="container">
           <header className="page-intro">
             <p className="page-kicker">Apply | Interview | Join</p>
-            <h1 className="page-title">Job Details</h1>
-            <p className="page-subtitle">Keep CV Little Interesting plz!!</p>
+            <h1 className="page-title careers-page-title">Job Details</h1>
+            <p className="page-subtitle careers-page-subtitle">Keep CV Little Interesting plz!!</p>
           </header>
 
           <div className="jobs-grid">

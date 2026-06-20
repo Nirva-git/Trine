@@ -8,11 +8,11 @@ export default function PlantMachineryPage() {
       <div className="container">
         <header className="page-intro">
           <p className="page-kicker">Our Heros</p>
-          <h1 className="page-title">Plant And Machinery</h1>
-          <p className="page-subtitle">Best Machines for Best Outcome</p>
+          <h1 className="page-title machinery-page-title">Plant And Machinery</h1>
+          <p className="page-subtitle machinery-page-subtitle">Best Machines for Best Outcome</p>
         </header>
 
-        <div className="simple-card-grid">
+        <div className="simple-card-grid machinery-grid">
           {content.machinery.map((machine) => (
             <article className="simple-card" key={machine.id}>
               {machine.image ? <img className="dummy-image" src={machine.image} alt={machine.title} /> : (

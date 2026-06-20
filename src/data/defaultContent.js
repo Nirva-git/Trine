@@ -28,6 +28,18 @@ export const DEFAULT_CONTENT = {
   })),
   projectCategories: [
     {
+      id: 'category-commercial',
+      slug: 'commercial',
+      label: 'Commercial',
+      description: 'From ideation to creation, our locations and structures offer efficient workspaces that combine productivity and convenience.',
+      heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=600&fit=crop&q=80',
+      projects: [
+        ['Shivam Trade Center', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=900&fit=crop&q=80'],
+        ['Sun South Trade', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&h=900&fit=crop&q=80'],
+        ['Sun Orbit', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=900&fit=crop&q=80'],
+      ],
+    },
+    {
       id: 'category-residential',
       slug: 'residential',
       label: 'Residential',
@@ -40,15 +52,14 @@ export const DEFAULT_CONTENT = {
       ],
     },
     {
-      id: 'category-commercial',
-      slug: 'commercial',
-      label: 'Commercial',
-      description: 'From ideation to creation, our locations and structures offer efficient workspaces that combine productivity and convenience.',
-      heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=600&fit=crop&q=80',
+      id: 'category-individual-houses',
+      slug: 'individual-houses',
+      label: 'Individual Houses',
+      description: 'We craft individual houses that reflect each client’s vision through thoughtful planning and construction.',
+      heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&h=600&fit=crop&q=80',
       projects: [
-        ['Shivam Trade Center', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=900&fit=crop&q=80'],
-        ['Sun South Trade', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&h=900&fit=crop&q=80'],
-        ['Sun Orbit', 'Commercial @Ahmedabad', 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=900&fit=crop&q=80'],
+        ['Bsafal House', 'Individual House @Ahmedabad', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&h=900&fit=crop&q=80'],
+        ['Khandwala House', 'Individual House @Ahmedabad', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&h=900&fit=crop&q=80'],
       ],
     },
     {
@@ -63,17 +74,6 @@ export const DEFAULT_CONTENT = {
       ],
     },
     {
-      id: 'category-hospitality',
-      slug: 'hospitality',
-      label: 'Hospitality',
-      description: 'We deliver hotels and resorts with a focus on guest experience, operational detail and long-term quality.',
-      heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&h=600&fit=crop&q=80',
-      projects: [
-        ['Karnavati Club & Resorts', 'Hospitality @Ahmedabad', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=900&fit=crop&q=80'],
-        ['Hotel Kristar', 'Hospitality @Ahmedabad', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=900&fit=crop&q=80'],
-      ],
-    },
-    {
       id: 'category-industrial',
       slug: 'industrial',
       label: 'Industrial',
@@ -85,14 +85,14 @@ export const DEFAULT_CONTENT = {
       ],
     },
     {
-      id: 'category-individual-houses',
-      slug: 'individual-houses',
-      label: 'Individual Houses',
-      description: 'We craft individual houses that reflect each client’s vision through thoughtful planning and construction.',
-      heroImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&h=600&fit=crop&q=80',
+      id: 'category-hospitality',
+      slug: 'hospitality',
+      label: 'Hospitality',
+      description: 'We deliver hotels and resorts with a focus on guest experience, operational detail and long-term quality.',
+      heroImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&h=600&fit=crop&q=80',
       projects: [
-        ['Bsafal House', 'Individual House @Ahmedabad', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&h=900&fit=crop&q=80'],
-        ['Khandwala House', 'Individual House @Ahmedabad', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&h=900&fit=crop&q=80'],
+        ['Karnavati Club & Resorts', 'Hospitality @Ahmedabad', 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=900&fit=crop&q=80'],
+        ['Hotel Kristar', 'Hospitality @Ahmedabad', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=900&fit=crop&q=80'],
       ],
     },
   ].map((category) => ({
